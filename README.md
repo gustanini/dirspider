@@ -23,3 +23,26 @@ To install these in Kali use:
 ```bash
 sudo apt install dirsearch -y && sudo apt install gospider -y
 ```
+
+## Usage
+
+To use this tool please read the following syntax:
+
+### Get Help
+
+```bash
+./dirspider.sh -h               
+Usage: ./dirspider.sh <URL> [-r]
+-h: Show this help message
+-f: Enable recursion
+```
+
+### Example
+
+```bash
+# recursive
+./dirspider.sh website.com -r
+
+#regular
+./dirspider.sh website.com
+```
