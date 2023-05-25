@@ -1,0 +1,7 @@
+Update README installation options zhrc, git clone, add git repo to PATH.
+
+Features:
+
+Parse spider.out contents: use awk to only include URL name, use sort uniq and grep -v '.js' files out for cleanup.
+
+Add gobuster support.
