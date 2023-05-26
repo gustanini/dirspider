@@ -31,7 +31,7 @@ fi
 if [[ $help == true ]]; then
   echo "Usage: $0 <URL> [-r]"
   echo "-h: Show this help message"
-  echo "-f: Enable recursion"
+  echo "-r: Enable recursion"
   exit 0
 fi
 
