@@ -37,12 +37,12 @@ fi
 
 # Recursive loop
 if [[ "$recursive" == true ]]; then
-  dirsearch -u "$1" -r --deep-recursive -F -t 100 -x 404,400,500 -o "$(pwd)/dirsearch.out" --format=simple && gospider -S dirsearch.out -d 2 -t 50 > spider.out
+  dirsearch -u "$1" -r --deep-recursive -F -t 100 -x 404,400,403,500 -o "$(pwd)/dirsearch.out" --format=simple && gospider -S dirsearch.out -d 2 -t 50 > spider.out
 echo "Results on dirsearch.out and spider.out"
 exit 0
 else
   # Run dirsearch without recursion
-  dirsearch -u "$1" -F -t 100 -x 404,400,500 -o "$(pwd)/dirsearch.out" --format=simple && gospider -S dirsearch.out -d 2 -t 50 > spider.out
+  dirsearch -u "$1" -F -t 100 -x 404,400,403,500 -o "$(pwd)/dirsearch.out" --format=simple && gospider -S dirsearch.out -d 2 -t 50 > spider.out
 echo "Results on dirsearch.out and spider.out"
 exit 0
 fi
